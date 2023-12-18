@@ -1,0 +1,53 @@
+.footer {
+  color: $white-color;
+  padding: {
+    top: 7.6rem;
+    bottom: 11.6rem;
+  };
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  &__logo {
+    max-width: 22.6rem;
+    height: 4.6rem;
+  }
+
+  &__about {
+    &-text {
+      @include footer-texts(38.8, 1.7);
+    }
+  }
+
+  &__address {
+    margin: {
+      top: .3rem;
+      left: 32.2rem;
+    };
+
+    &-title {
+      text-transform: uppercase;
+    }
+
+    &-text {
+      @include footer-texts(28.3, 1.9);
+    }
+  }
+
+  &__contact {
+    margin: {
+      top: .3rem;
+      left: 13.8rem;
+    };
+
+    &-title {
+      text-transform: uppercase;
+    }
+
+    &-tel {
+      margin-top: 1.9rem;
+    }
+  }
+}

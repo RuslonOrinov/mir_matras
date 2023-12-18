@@ -1,0 +1,72 @@
+@use "sass:math";
+
+// margin-top
+@each  $val in $marginTopSizes{
+  @if($val < 0 ){
+    .u-mt#{$val}-min{
+      margin-top: math.div($val, 10) * 1rem;
+    }
+
+    
+  }
+  @if($val > 0){
+    .u-mt-#{$val}{
+      margin-top: math.div($val, 10) * 1rem;
+    }
+  }
+}
+
+// padding bottom
+.u-pb-41 {
+  padding-bottom: 4.1rem;
+}
+
+// hidden
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
+// Close
+.close {
+  position: absolute;
+  top: 2.1rem;
+  right: 1.2rem;
+  font-size: 5rem;
+  line-height: .5rem;
+  color: $gray-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// line 
+.line {
+  height: 1px;
+  background-color: $gray-color;
+}
+
+// fade-up
+.fade-up{
+  transform: translate(-50%, -200%) !important; 
+}
+
+
+// fade down
+.fade-down {
+  transform: 3% !important;
+}
+
+// TOwards
+.to-right{
+  @include toToward(0, -8);
+}
+
+.to-left{
+  @include toToward(0, 8);
+}
+
+.to-top{
+  @include toToward(0, 10);
+}

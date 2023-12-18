@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"> </script>
+    <script defer src="./assets/js/index.min.js"> </script>
+    <title>World Matress</title>
+  </head>
+  <body> 
+    <div class="main-container">
+      <header class="header" id="header"> 
+        <div class="header__logo"> <a class="logo" href="/"><img src="./assets/images/logo.svg" alt="logo"></a></div>
+        <div class="header__wrapper bg-light">
+          <div class="container"> 
+            <div class="header__main"> 
+              <div class="call to-left"> 
+                <p class="call__number para-medium">+7 915 253-55-77</p>
+                <p class="call__about para-smallest">прямая консультация с руководителем отдела продаж</p>
+              </div>
+              <h1 class="header__title heading-primary to-right">
+                 Рассчитайте стоимость самого <span class="text-primary">выгодного предложения </span>от фабрики «Мир Матрацев» прямо сейчас</h1>
+              <h3 class="header__voting heading-tertiary u0mt-18 to-right">Ответьте на несколько вопросов и получите:  </h3>
+              <div class="header__options u-mt-21 to-right">
+                <div class="header__option header__option--1">
+                  <h2 class="header__option-number text-primary heading-secondary">01</h2>
+                  <p class="header__option-about header__option-about--1 para-small u-mt-9">Расчет стоимости матраца или кровати</p>
+                </div>
+                <div class="header__option header__option--2">
+                  <h2 class="header__option-number text-primary heading-secondary">02</h2>
+                  <p class="header__option-about header__option-about--2 para-small u-mt-9">Каталог лучших изделий фабрики</p>
+                </div>
+                <div class="header__option header__option--3">
+                  <h2 class="header__option-number text-primary heading-secondary">03</h2>
+                  <p class="header__option-about header__option-about--3 para-small u-mt-9">  Консультацию наших ведущих специалистов</p>
+                </div>
+              </div>
+              <div class="header__btn to-right"> 
+                <button class="btn heading-secondary u-mt-42" type="button"> рассчитать</button>
+              </div>
+              <div class="header__gallery to-left"> 
+                <div class="header__gallery-lamp"> <img src="./assets/images/lamp.png" alt="lamp"></div>
+                <div class="header__gallery-bed"> <img src="./assets/images/bed.png" alt="bed"></div>
+                <div class="header__gallery-flower"> <img src="./assets/images/flower.png" alt="flower"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__service to-top"> 
+          <div class="container"> 
+            <div class="header__service-wrapper">
+              <div class="header__service-type">
+                <div class="header__service-guarentee">
+                  <div class="header__service-guarentee-icon"><img src="./assets/images/guarentee.svg" alt="gularantee"></div>
+                  <h4 class="header__service-title header__service-title--1 heading-fourth">Гарантия 18 месяцев</h4>
+                </div>
+                <p class="header__service-about header__service-about--1 para-big u-mt-31">Мы даем официальную гарантию на свою продукцию. Все наши материалы сертифицированы и имеют сертификаты качества.    </p>
+              </div>
+              <div class="header__service-type">
+                <div class="header__service-delivery">
+                  <div class="header__service-delivery-icon"><img src="./assets/images/delivery.svg" alt="delivary"></div>
+                  <h4 class="header__service-title header__service-title--2 heading-fourth">Бесплатная доставка</h4>
+                </div>
+                <p class="header__service-about header__service-about--2 para-big u-mt-31">Доставка по Пензе до вашего адреса осуществляется бесплатно.</p>
+              </div>
+              <div class="header__service-type">
+                <div class="header__service-price">
+                  <div class="header__service-price-icon"><img src="./assets/images/price.svg" alt="price"></div>
+                  <h4 class="header__service-title header__service-title--3 heading-fourth">Цены от производителя</h4>
+                </div>
+                <p class="header__service-about header__service-about--3 para-big u-mt-31">Вам не придется переплачивать. Вы получите самую хорошую цену в Пензе и Пензенской области. Цены от производителя.  </p>
+              </div>
+              <div class="header__service-type">
+                <div class="header__service-consult">
+                  <div class="header__service-consult-icon"><img src="./assets/images/consult.svg" alt="consult"></div>
+                  <h4 class="header__service-title header__service-title--4 heading-fourth">Консультация менеджера</h4>
+                </div>
+                <p class="header__service-about header__service-about--4 para-big u-mt-31">Вы получите бесплатную, компетентную консультацию, высококлассного менеджера.      </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-home">
+        <section class="catalogs"> 
+          <h2 class="catalogs__title heading-secondary--600 bg-light">Каталог наших изделий</h2>
+          <div class="container"> 
+            <section class="catalogs__block">
+              <div class="catalogs__wrapper"> 
+                              <div class="catalog u-pb-41 catalog--1">
+                                <div class="catalog__img catalog__img--1"><img src="./assets/images/catalog-img-1.png" alt="catalog-img-1"></div>
+                                <div class="catalog__about"> 
+                                  <h6 class="catalog__name heading-sixth">диван</h6>
+                                  <h5 class="catalog__price heading-fiveth u-mt-9">Цена от 38.000</h5>
+                                  <button class="btn para-small u-mt-27">перейти в каталог</button>
+                                </div>
+                              </div>
+                              <div class="catalog u-pb-41 catalog--2">
+                                <div class="catalog__img catalog__img--2"><img src="./assets/images/catalog-img-2.png" alt="catalog-img-2"></div>
+                                <div class="catalog__about"> 
+                                  <h6 class="catalog__name heading-sixth">Модульная кровать</h6>
+                                  <h5 class="catalog__price heading-fiveth u-mt-9">Цена от 40.000</h5>
+                                  <button class="btn para-small u-mt-27">перейти в каталог</button>
+                                </div>
+                              </div>
+                              <div class="catalog u-pb-41 catalog--3">
+                                <div class="catalog__img catalog__img--3"><img src="./assets/images/catalog-img-3.png" alt="catalog-img-3"></div>
+                                <div class="catalog__about"> 
+                                  <h6 class="catalog__name heading-sixth">3D стежка</h6>
+                                  <h5 class="catalog__price heading-fiveth u-mt-9">Цена от 25.000</h5>
+                                  <button class="btn para-small u-mt-27">перейти в каталог</button>
+                                </div>
+                              </div>
+              </div>
+              <div class="catalogs__wrapper"> 
+                              <div class="catalog u-pb-41 catalog--4">
+                                <div class="catalog__img catalog__img--4"><img src="./assets/images/catalog-img-4.png" alt="catalog-img-4"></div>
+                                <div class="catalog__about"> 
+                                  <h6 class="catalog__name heading-sixth">Матрац с пружинным блоком Боннель</h6>
+                                  <h5 class="catalog__price heading-fiveth u-mt-9">Цена от 17.000</h5>
+                                  <button class="btn para-small u-mt-27">перейти в каталог</button>
+                                </div>
+                              </div>
+                              <div class="catalog u-pb-41 catalog--5">
+                                <div class="catalog__img catalog__img--5"><img src="./assets/images/catalog-img-5.png" alt="catalog-img-5"></div>
+                                <div class="catalog__about"> 
+                                  <h6 class="catalog__name heading-sixth">Матрац с блоком независимых пружин</h6>
+                                  <h5 class="catalog__price heading-fiveth u-mt-9">Цена от 18.000</h5>
+                                  <button class="btn para-small u-mt-27">перейти в каталог</button>
+                                </div>
+                              </div>
+                              <div class="catalog u-pb-41 catalog--6">
+                                <div class="catalog__img catalog__img--6"><img src="./assets/images/catalog-img-6.png" alt="catalog-img-6"></div>
+                                <div class="catalog__about"> 
+                                  <h6 class="catalog__name heading-sixth">Фигурное изголовье</h6>
+                                  <h5 class="catalog__price heading-fiveth u-mt-9">Цена от 34.000</h5>
+                                  <button class="btn para-small u-mt-27">перейти в каталог</button>
+                                </div>
+                              </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__title-wrapper bg-light"> 
+            <div class="container"> 
+              <h2 class="about__title heading-secondary--600">Почему более 98% клиентов возвращаются в “Мир матрацев” повторно и рекомендуют компанию друзьям?</h2>
+            </div>
+          </div>
+          <div class="about__detail"> 
+            <div class="container"> 
+              <ul class="about__detail-list"> 
+                <li class="about__detail-item"> 
+                  <div class="about__detail-text"> 
+                    <h6 class="about__detail-title heading-sixth">Работаем с 2001 года.</h6>
+                    <p class="about__detail-description heading-sixth--400">Имеем безупречную репутацию – бесплатно консультируем, помогаем с выбором или проектированием изделий, всегда находимся на связи.</p>
+                  </div>
+                </li>
+                <li class="about__detail-item"> 
+                  <div class="about__detail-text"> 
+                    <h6 class="about__detail-title heading-sixth">Работаем для долгосрочного сотрудничества.</h6>
+                    <p class="about__detail-description heading-sixth--400">Идем навстречу клиентам – предлагаем скидки в 5% на день рождение (и за 3 дня до и после него), молодоженам (в течение 6 месяцев со дня свадьбы), пенсионерам.</p>
+                  </div>
+                </li>
+                <li class="about__detail-item"> 
+                  <div class="about__detail-text"> 
+                    <h6 class="about__detail-title heading-sixth">Продажа дизайнерской мягкой мебели.</h6>
+                    <p class="about__detail-description heading-sixth--400"> В каталоге фабрики представлено более 30 кроватей и диванов, готовых для заказа. Ежедневно наши сотрудники пополняют ассортимент – расширяют линейку моделей.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div id="map"></div>
+      </main>
+      <footer class="footer bg-dark"> 
+        <div class="container"> 
+          <div class="footer__wrapper">
+            <div class="footer__about"> 
+              <div class="footer__logo"> <a class="logo" href="/"><img src="./assets/images/logo-2.svg" alt="logo-2"></a></div>
+              <h4 class="footer__about-text heading-fourth">Фабрика Мир матрацев – позаботимся о вашем здоровом и крепком сне.</h4>
+            </div>
+            <div class="footer__address"> 
+              <h3 class="footer__address-title heading-tertiary">аДРЕС</h3>
+              <h5 class="footer__address-text heading-fiveth">г. Пенза Т.Ц «Метросити» ул. Карпинского, д. 39 этаж 2, кабинет 18</h5>
+            </div>
+            <div class="footer__contact">
+              <h3 class="footer__contact-title heading-tertiary">контакты</h3>
+              <h5 class="footer__contact-tel heading-fiveth">тел: +7 (915) 253-55-77</h5>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="number-popup__backdrop hidden"> </div>
+    <div class="number-popup__card fade-up"> 
+      <div class="close">&times;</div>
+      <div class="number-popup__container"> 
+        <h3 class="number-popup__title heading-tertiary"> введите свой номер телефона, чтобы перейти в онлайн-каталог мебели</h3>
+      </div>
+      <div class="line"> </div>
+      <div class="number-popup__container"> 
+        <form class="number-popup__form" action="">
+          <input class="heading-tertiary" type="tel" placeholder="+7 (999) 99-99-999*">
+          <button class="heading-fiveth--600" type="submit">Перейти в каталог   </button>
+        </form>
+      </div>
+    </div>
+    <div class="question-popup__backdrop hidden"></div>
+    <div class="question-popup__container hidden"> </div>
+    <div class="response-popup__backdrop hidden"> </div>
+    <div class="response-popup__card hidden"> 
+      <div class="response-popup__container"> 
+        <div class="response-popup__icon"> <img src="./assets/images/response-icon.png" alt="response-icon"></div>
+        <div class="response-popup__text"> 
+          <p>спасибо!</p>
+          <p>Ваша заявка отправлена.</p>
+          <p>в ближайшее время мы с вами свяжемся!</p>
+        </div>
+        <div class="response-popup__btn">   OK</div>
+      </div>
+    </div>
+    <div class="scroll-up"> 
+      <div class="scroll-up__inner"> 
+        <svg class="scroll-up__icon">  
+          <use xlink:href="./assets/images/sprite.svg#icon-chevron-up"></use>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
